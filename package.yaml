@@ -1,0 +1,36 @@
+name:                csv2json
+version:             0.1.0.0
+github:              srdqty/csv2json
+license:             BSD3
+author:              Sofia Donataccio
+maintainer:          srdqty@gmail.com
+copyright:           Copyright (c) 2018 Sofia Donataccio
+
+extra-source-files:
+  - README.md
+  - ChangeLog.md
+
+# Metadata used when publishing your package
+# synopsis:
+# description:
+# category:            Web
+
+dependencies:
+  - aeson
+  - base >= 4.7 && < 5
+  - bytestring
+  - conduit >= 1.2.8 && < 2.0
+  - conduit-extra
+  - csv-conduit >= 0.6.8.1
+  - text
+
+executables:
+  csv2json:
+    main: Main.hs
+    source-dirs: src
+    ghc-options:
+      - -threaded
+      - -rtsopts
+      - -with-rtsopts=-N
+      - -Wall
+      - -O2
