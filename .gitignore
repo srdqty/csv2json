@@ -8,7 +8,6 @@ result
 /docker-image.tar.gz
 
 # generated config files
-*.cabal
 /default.nix
 
 # Created by https://www.gitignore.io/api/haskell
